@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="{{url_for('static', filename='welcome.css')}}">
+
 </head>
 <body>
-    <h1>Welcome {{user.name}}</h1>
+    <h1>Welcome {{user.name}}!</h1>
     {% if user.role == 'admin' %}
-    <p class="badge badge.admin">
-        ⭐Admin access
-    </p>
+        <p class="badge badge.admin">
+            🌟ADMIN ACCESS
+        </p>  
     {% endif %}
 </body>
 </html>
